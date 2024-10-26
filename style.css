@@ -1,3 +1,123 @@
+header {
+  width: 100%;
+  height: 15vh;
+  padding: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
+  background-color: white;
+  position: fixed;
+  top: 0;
+}
+header .logo-container {
+  display: block;
+  max-width: 11rem;
+  max-height: 6.5rem;
+  cursor: pointer;
+}
+@media (max-width: 600px) {
+  header .logo-container {
+    width: 7rem;
+  }
+}
+header .logo-container img {
+  width: 100%;
+  height: 100%;
+}
+header nav {
+  width: 85%;
+  padding: 0.3rem;
+  padding: 0 1rem;
+  font-weight: 600;
+  font-size: 140%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12rem;
+}
+@media (max-width: 1167px) {
+  header nav {
+    gap: 0;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 780px) {
+  header nav {
+    justify-content: end;
+  }
+}
+header nav a {
+  text-decoration: none;
+  color: rgb(25, 62, 136);
+}
+@media (max-width: 780px) {
+  header nav a {
+    display: none;
+  }
+}
+header nav .nav-icon {
+  display: none;
+}
+@media (max-width: 780px) {
+  header nav .nav-icon {
+    display: block;
+    font-size: 210%;
+    font-weight: 700;
+    color: rgb(25, 62, 136);
+    cursor: pointer;
+  }
+}
+
+.pop-up-menu {
+  width: 85%;
+  padding: 1rem 2rem;
+  background-color: white;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.pop-up-menu .top-menu {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  font-size: 300%;
+  color: rgb(25, 62, 136);
+}
+.pop-up-menu .link-container {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  font-size: 150%;
+  cursor: pointer;
+  border-top: 1px solid rgb(25, 62, 136);
+}
+@media (max-width: 440px) {
+  .pop-up-menu .link-container {
+    font-size: 120%;
+  }
+}
+.pop-up-menu .link-container a {
+  font-weight: 600;
+  color: rgb(25, 62, 136);
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+}
+.pop-up-menu .link-container a.active {
+  text-decoration: underline;
+  transition: 1s ease all;
+}
+
+.close-pop-up-menu {
+  display: none;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -13,34 +133,13 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  background-color: #333;
-  color: #fff;
-  min-height: 15vh;
-}
-.header .logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-.header .nav a {
-  color: #fff;
-  margin: 0 10px;
-  text-decoration: none;
-}
-.header .nav a:hover {
-  text-decoration: underline;
-}
-
 .products-section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
   padding: 20px;
   flex-grow: 1;
+  margin-top: 15vh;
 }
 @media (max-width: 355px) {
   .products-section {
@@ -74,4 +173,83 @@ body {
   padding: 10px;
   background-color: #333;
   color: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.production {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f7f9fc;
+  font-family: Arial, sans-serif;
+  color: #333;
+  flex-direction: column;
+  padding: 0.5rem;
+}
+
+.back-home-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  margin-top: 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #ff6b6b;
+  border: none;
+  border-radius: 25px;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(255, 107, 107, 0.4);
+}
+.back-home-btn:hover {
+  background-color: #ff5252;
+  box-shadow: 0 6px 15px rgba(255, 82, 82, 0.5);
+  transform: translateY(-2px);
+}
+.back-home-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 8px rgba(255, 107, 107, 0.3);
+}
+
+.maintenance-container {
+  text-align: center;
+  max-width: 600px;
+  min-height: 40vh;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+.maintenance-container h1 {
+  font-size: 2rem;
+  color: #ff6b6b;
+  margin-bottom: 15px;
+}
+.maintenance-container p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #555;
+  margin: 10px 0;
+}
+.maintenance-container p:last-child {
+  color: #888;
+}
+
+@media (max-width: 500px) {
+  .maintenance-container {
+    padding: 15px;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1rem;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -5,20 +5,65 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Biopeak Ltd</title>
   <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<script src="app.js" defer></script>
+<script src="app2.js" defer></script>
+<script src="app3.js" defer></script>
+<script src="app4.js" defer></script>
 <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Header -->
-  <header class="header">
-    <div class="logo">Logo</div>
-    <nav class="nav">
-      <a href="#">Home</a>
-      <a href="#">Products</a>
-      <a href="#">Contact</a>
-    </nav>
+  <!-- OVERLAY -->
+  <div class="overlay hide-overlay"></div>
+  <!-- OVERLAY -->
+  <!-- POP UP HEADER -->
+  <div class="pop-up-menu close-pop-up-menu">
+      <div class="top-menu">
+          <i class='bx bx-x'></i> 
+      </div>
+      <div class="link-container">
+         <a href="/" class="link-btn"><i class="bi bi-file-earmark-person"></i> Home</a>            
+     </div>
+      
+      <div class="link-container">
+          <a href="/production.html" class="link-btn"><i class="bi bi-file-earmark-person"></i> Our Services</a>            
+      </div>
+      <div class="link-container">
+          <a href="/production.html" class="link-btn"><i class="bi bi-geo-alt-fill"></i> Find us</a>                
+      </div>
+      <div class="link-container">
+          <a href="/production.html" class="link-btn"><i class="bi bi-telephone-fill"></i> Contact us</a>
+      </div>
+      <div class="link-container">
+         <a href="/production.html" class="link-btn"><i class="bi bi-houses-fill"></i> About Us</a>            
+     </div>
+  </div>
+  <!-- POP UP HEADER -->
+  <!-- HEADER -->
+  <header>
+      <!-- LOGO -->
+      <a href="/index.html" class="logo-container">
+          <img src="/Biopeak.jpg" alt="Cosmos Agro-Tech Firm Ltd">
+      </a>
+      <!-- LOGO -->
+
+      <!-- NAV BAR -->
+      <nav>
+          
+          <a href="/production.html" >Our Services</a>
+          <a href="/production.html">Find us</a>
+          <a href="/production.html">Contact us</a>
+          <a href="/production.html">About us</a>
+          <div class="nav-icon">
+              <i class='bx bx-menu'></i>
+          </div>
+      </nav>
+      <!-- NAV-BAR -->
   </header>
+  <!-- HEADER -->
+
 
   <!-- Main Section with Product Cards -->
   <section class="products-section">

@@ -17,32 +17,32 @@
 
   }
   
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    min-height: 15vh;
+//   .header {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     padding: 10px 20px;
+//     background-color: #333;
+//     color: #fff;
+//     min-height: 15vh;
   
-    .logo {
-      font-size: 1.5rem;
-      font-weight: bold;
-    }
+//     .logo {
+//       font-size: 1.5rem;
+//       font-weight: bold;
+//     }
   
-    .nav {
-      a {
-        color: #fff;
-        margin: 0 10px;
-        text-decoration: none;
+//     .nav {
+//       a {
+//         color: #fff;
+//         margin: 0 10px;
+//         text-decoration: none;
   
-        &:hover {
-          text-decoration: underline;
-        }
-      }
-    }
-  }
+//         &:hover {
+//           text-decoration: underline;
+//         }
+//       }
+//     }
+//   }
   
   .products-section {
     display: grid;
@@ -50,7 +50,7 @@
     gap: 20px;
     padding: 20px;
     flex-grow: 1;
-    // margin-top: 15vh;
+    margin-top: 15vh;
 
     @media (max-width:355px) {
         display: flex;
