@@ -25,6 +25,16 @@ header{
             height: 100%;
         }
     }
+
+    .name{
+        display:flex;
+        color: rgb(25,62,136);
+
+        @media (max-width:380px) {
+            font-size: medium;
+        }
+
+    }
     //logo
 
     //nav-bar
@@ -37,14 +47,33 @@ header{
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 12rem;
+        gap: 7rem;
         @media (max-width:1167px) {
             gap: 0;
             justify-content: space-between;
         }
         @media (max-width:780px) {
             justify-content: end;
+            gap: 12rem;
+
     
+        }
+        @media (max-width:602px) {
+            gap: 8rem;
+        }
+        @media (max-width:517px) {
+            gap: 5rem;
+        }
+        @media (max-width:452px) {
+            gap:3rem;
+        }
+        @media (max-width:410px) {
+            gap: 1.5rem;
+        }
+        @media (max-width:386px) {
+            gap: 0;
+            display: flex;
+            justify-content: space-between;
         }
 
         a{
